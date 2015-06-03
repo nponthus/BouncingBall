@@ -26,11 +26,10 @@ for nn=1:N
     z(nn+1)=z(nn)+vh*dt;
     if z(nn+1)>0
         a(nn+1)=-g;
-        v(nn+1)=vh+0.5*a(nn+1)*dt;
     else
-        a(nn+1)=-g+K*(-z(nn+1))^(3/2);
-        v(nn+1)=vh+0.5*a(nn+1)*dt;
+        a(nn+1)=-g+K*(-z(nn+1))^(3/2);       
     end
+    v(nn+1)=vh+0.5*a(nn+1)*dt;
 end
 
 
