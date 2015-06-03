@@ -1,3 +1,9 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%calcul Bouncing Ball elastic collision
+%Nicolas
+%03 06 2015
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %parameter
 m=0.05; %mass of the ball
 e=1; %restit coeff
@@ -6,6 +12,8 @@ v0=-1; %initial velocity
 g=9.81; %gravity
 dt=0.05; %time step
 N=1000; %number of step
+
+%Velocity Verlet solving
 v=[v0];
 z=[z0];
 for nn=1:N
